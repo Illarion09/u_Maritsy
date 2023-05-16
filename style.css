@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+nav, header, footer, aside {display: block;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    background: url('picture/fons/517ae088bd7911e7a22f1866da87aa23_6a82a3183ddf11eaa2c11866da87aa23.jpg') no-repeat fixed center / cover;
+    line-height: 1;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {font-size: inherit;}
+
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+
+a, a :visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul,li {list-style: none;}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 2px 3px 20px 10px #0a0a0a;
+}
+
+/* Шапка */
+
+.header {
+    width: 100%;
+    background-color: #f7e2e2;
+}
+
+.header_wrapper {
+   
+}
+
+.header_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_logo {
+    width: 110px;
+    height: 100px;
+    margin-top: 12px;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+}
+
+.logo_img {
+    width: 100%;
+    display: block;
+    background: url('picture/Flower-Logo-by-Friendesign-Acongraphic-8.jpg') no-repeat fixed center/cover;
+}
+
+.header_sub {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7e2e2;
+}
+
+.header_nav {
+    width: 550px;
+}
+
+.header_list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header_item {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_link {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0c0c0c;
+    transition-duration: 1s;
+}
+
+.header_link:hover {
+    color: #e57e7e;
+    text-shadow: 2px;
+}
+
+/* главный блок */
+
+.main {
+    width: 100%;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* .intro:hover {
+    filter: blur(2px);
+    transition-duration: 1s;
+} */
+
+.blur {
+    background: url('picture/Fons/Picsart_23-04-01_18-57-43-064.png') center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    filter: blur(2px);
+}
+
+.intro_wrapper {
+    width: 100%;
+    margin-bottom: 225px;
+}
+
+.intro_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 320px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 10px 10px 40px 10px;
+    filter: drop-shadow(10px 10px 40px);
+}
+
+.intro_img_logo {
+    width: 100%;
+    height: auto;
+ 
+  
+}
+
+.intro_img_logo:hover {
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+.flowers {
+    background-color: #fff;
+}
+
+.flowers_title {
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.catalog_flowers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flower {
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 333px;
+    box-shadow: 2px 2px 5px #282828;
+}
+
+.flower_img {
+    width: 330px;
+    height: 370px;
+    background-color: #f7e2e2;
+    /* box-shadow: 2px 2px 5px #282828; */
+    object-fit: cover;
+}
+
+.flower_name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    padding: 0 5px;
+}
+
+.flower_content {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 0 5px;
+}
+
+/* .flower_btn {
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f7e2e2;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 5px #282828;
+    transition-duration: 0.5s;
+}
+
+.flower_btn:hover {
+    background-color: #fff;
+    color: #e57e7e;
+} */
+
+.bukets {
+    background-color: #f7e2e2;
+}
+
+.compositions {
+    background-color: #fff;
+}
+
+.products {
+    background-color: #f7e2e2;
+}
+
+.clients {
+    background-color: #fff;
+}
+
+.catalog_clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.client {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.client_img {
+    width: 370px;
+    height: 430px;
+    background-color: #f7e2e2;
+    box-shadow: 2px 2px 5px #282828;
+    object-fit: cover;
+}
+
+.delivery {
+    background-color: #f7e2e2;
+}
+
+.delivery_wrapper {
+    padding-bottom: 70px;
+}
+
+.delivery_content {
+    font-size: 25px;
+    margin: 0 15px 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.delivery_content_sub {
+    font-size: 25px;
+    margin: 0 15px 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+}
+
+.contacts {
+    background-color: #fff;
+}
+
+.contacts_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_icon {
+    width: 50%;
+    height: 250px;
+}
+
+.contact_icon_wrapper {
+    margin-left: 70px;
+}
+
+.contact_telefon {
+    margin-bottom: 100px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.telefon_number {
+    text-decoration: none;
+}
+
+.contact_icon_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_icon_item {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.contact_icon_img {
+    width: 25px;
+    margin-top: 5px;
+}
+
+.contact_icon_text {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+.contact_map {
+    width: 50%;
+}
+
+/* .picture_fon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper_picture_fon {
+    background: url('picture/Fons/Picsart_23-04-01_18-52-43-785.png') center center/cover;
+    width: 100%;
+    height: 100vh;
+} */
+
+/* Подвал */
+
+.footer {
+    width: 100%;
+    background-color: #f7e2e2;
+    border-top: 1px solid black;
+}
+
+.footer_logo {
+    width: 120px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+@media (max-width: 580px) {
+
+    .container {
+        width: 85%;
+    }
+
+    .header_title {
+        font-size: 11px;
+    }
+    
+    .header_link {
+        font-size: 11px;
+    }
+
+    .intro_wrapper {
+        margin-bottom: 90px;
+    }
+
+    .intro_img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .flower {
+        max-width: 305px;
+    }
+    
+    .flower_img {
+        width: 100%;
+    }
+
+    .flowers_title {
+        font-size: 30px;
+    }
+
+    .client_img {
+        width: 100%;
+    }
+
+    .delivery_content {
+        font-size: 20px;
+    }
+
+    .delivery_content_sub {
+        font-size: 20px;
+    }
+
+    .contacts_wrapper {
+        display: block;
+    }
+
+    .contact_telefon {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .contact_icon {
+        width: 100%;
+    }
+
+    .contact_icon_wrapper {
+        margin-left: 10px;
+    }
+
+    .contact_icon_text {
+        font-size: 18px;
+    }
+
+    .contact_map {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
