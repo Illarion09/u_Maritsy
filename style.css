@@ -82,6 +82,10 @@ ul,li {list-style: none;}
     background: url('picture/Flower-Logo-by-Friendesign-Acongraphic-8.jpg') no-repeat fixed center/cover;
 }
 
+.header_link_chat {
+    padding-top: 5px;
+}
+
 .header_sub {
     display: flex;
     justify-content: space-around;
@@ -187,6 +191,13 @@ ul,li {list-style: none;}
     font-family: 'Lobster', cursive;
     text-align: center;
     padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.flowers_title_sub {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
     padding-bottom: 70px;
 }
 
@@ -261,6 +272,14 @@ ul,li {list-style: none;}
 
 .clients {
     background-color: #fff;
+}
+
+.clients_title {
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .catalog_clients {
@@ -457,6 +476,11 @@ ul,li {list-style: none;}
 
     .contact_icon_text {
         font-size: 18px;
+    }
+
+    .contact_icon_img {
+        width: 15px;
+        margin-top: 5px;
     }
 
     .contact_map {
